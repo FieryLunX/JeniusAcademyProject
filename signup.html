@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header class="navbar_header">
+        <div class="navbar">
+            <a href="index.html#home"><img class="navbar_logo" src="./image/Logo.png" alt="Jenius"></a>
+            <ul class="navbar__links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#plans">Our Plans</a></li>
+                <li><a href="index.html#testimonies">Testimonies</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="signup.html" id="join-us">Join Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <h1>REGISTER NOW</h1>
+            <form method="post" name="registerForm">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confpass">Confirm Password</label>
+                <input type="password" name="confpass" id="confpass">
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement">I Agree</label>
+                </div>
+                <br>
+                <button type="button" onclick="validateData()">REGISTER</button>
+            </form>
+        </div>
+        <div class="image"><img src="./image/banner-pic.png" alt=""></div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-text">© All rights reserved.</div>
+            <div class="footer-text footer-text-right">
+                (+62) 811-234-5678
+                <br>
+                readyjenius@yahoo.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>
